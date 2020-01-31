@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div{
+  text-align: left;
+}
+label {
+  width: 10px;
+  padding: 10px;
+}
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: slateblue;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <br>
+    <label for="Visitor Type">Visitor Type </label>
+    <select id="Visitor Type" name="Visitor Type">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+    </select>
+    <br>
+    <label for="Pass Type">Pass Type</label>
+    <select id="Pass Type" name="Pass Type">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+    </select>
+    <br>
+    <label for="Gender">Gender</label>
+    <select id="Gender" name="Gender">
+      <option value="a">Fmale</option>
+      <option value="b">Male</option>
+    </select>
+    <br>    
+    <label for="dob">Date of Birth</label>
+    <input type="date">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
